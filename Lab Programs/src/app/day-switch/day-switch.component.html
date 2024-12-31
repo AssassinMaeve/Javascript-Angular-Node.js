@@ -1,0 +1,40 @@
+<!-- Fieldset to group related elements -->
+<fieldset>
+    <!-- Center align the content inside the div -->
+    <div style="text-align:center">
+
+      <!-- Heading for the day of the week example -->
+      <h1>Day of the Week</h1>
+
+      <!-- Input field bound to the dayNumber property using ngModel for two-way data binding -->
+      <input type="number" [(ngModel)]="dayNumber" min="1" max="7" placeholder="Enter a number (1-7)" id="day">
+
+      <!-- ngSwitch directive to display the name of the day based on the dayNumber -->
+      <div [ngSwitch]="dayNumber">
+
+        <!-- Display Sunday if dayNumber is 1 -->
+        <p *ngSwitchCase="1">Sunday</p>
+
+        <!-- Display Monday if dayNumber is 2 -->
+        <p *ngSwitchCase="2">Monday</p>
+
+        <!-- Display Tuesday if dayNumber is 3 -->
+        <p *ngSwitchCase="3">Tuesday</p>
+
+        <!-- Display Wednesday if dayNumber is 4 -->
+        <p *ngSwitchCase="4">Wednesday</p>
+
+        <!-- Display Thursday if dayNumber is 5 -->
+        <p *ngSwitchCase="5">Thursday</p>
+
+        <!-- Display Friday if dayNumber is 6 -->
+        <p *ngSwitchCase="6">Friday</p>
+
+        <!-- Display Saturday if dayNumber is 7 -->
+        <p *ngSwitchCase="7">Saturday</p>
+        
+        <!-- Display an invalid message if dayNumber is not between 1 and 7 -->
+        <p *ngSwitchDefault>Invalid day number</p>
+      </div>
+    </div>
+  </fieldset>

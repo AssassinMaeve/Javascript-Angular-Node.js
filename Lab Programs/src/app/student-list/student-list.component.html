@@ -1,0 +1,10 @@
+<fieldset>
+        
+      <h1>Student List</h1>
+      <ul>
+        <li *ngFor="let student of students">{{ student }}</li>
+      </ul>
+      <input type="text" [(ngModel)]="newstudent" placeholder="Enter student name" id="newstudent" >
+      <button (click)="addStudent()" id="button" >Add Student</button>
+    
+  </fieldset>

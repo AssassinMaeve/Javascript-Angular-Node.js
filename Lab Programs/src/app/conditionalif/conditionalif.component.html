@@ -1,0 +1,12 @@
+
+
+<fieldset>
+<div style="text-align:center">
+    <h1>Toggle Message Example</h1>
+    <button (click)="toggleMessage()" id="ifbutton">Toggle Message</button>
+    <div *ngIf="isMessageVisible">
+      <p id="ifmessage">Hello, this is a conditional message!</p>
+    </div>
+  </div>
+</fieldset>
+

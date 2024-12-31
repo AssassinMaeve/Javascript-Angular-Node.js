@@ -1,0 +1,44 @@
+<!-- Fieldset to group related elements -->
+<fieldset>
+  <!-- Center align the content inside the div -->
+  <div align="center">
+
+    <!-- Heading for the to-do list -->
+    <h1>To-Do List</h1>
+
+    <!-- Input field bound to the newTask property using ngModel for two-way data binding -->
+    <input type="text" [(ngModel)]="newTask" placeholder="Enter a new task" id="newTask">
+
+    <!-- Button to add a new task -->
+    <button (click)="addTask()" id="button">Add Task</button>
+
+    <!-- Unordered list to display the tasks -->
+    <ul>
+      <!-- Loop through the tasks array using ngFor -->
+      <li *ngFor="let task of tasks; let i = index" align="left">
+
+        <!-- Display the task name and edit/delete buttons if not in editing mode -->
+        <div *ngIf="!task.isEditing">
+          {{ task.name }}
+
+          <!-- Button to enable editing mode for the task -->
+          <button (click)="editTask(task)" id="edit">Edit</button>
+
+          <!-- Button to delete the task -->
+          <button (click)="deleteTask(i)" id="delete">Delete</button>
+        </div>
+
+        <!-- Display the input field and save button if in editing mode -->
+        <div *ngIf="task.isEditing">
+
+          <!-- Input field bound to the task name using ngModel for two-way data binding -->
+          <input type="text" [(ngModel)]="task.name">
+
+          <!-- Button to save the edited task -->
+          <button (click)="saveTask(task)">Save</button>
+          
+        </div>
+      </li>
+    </ul>
+  </div>
+</fieldset>

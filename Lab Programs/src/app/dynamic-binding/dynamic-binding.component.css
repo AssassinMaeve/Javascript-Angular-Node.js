@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+
+h1 {
+    position: relative;
+    font-family: 'Exo';
+    font-size: 2em;
+    margin: 0;
+    transform: skew(-15deg);
+    letter-spacing: 0.03em; 
+  }
+
+#title{
+    position: relative;
+    font-family: 'Exo';
+    font-size: 4em;
+    margin-top: 2%;
+    transform: skew(-15deg);
+    letter-spacing: 0.03em; 
+
+    font-size: 70px;
+    font-weight: 600;
+    background-image: radial-gradient(circle,#553c9a, #696be4);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+fieldset{
+    margin:2%;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding:1%;
+    border-radius: 10px;
+}
+
+#input{
+    align-items: center;
+    margin: 2%;
+    font-size: 1.5em;
+    padding: 1%;
+}
+
+#box{
+    margin: 2%;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    font-size: 1.5em;
+    text-align: center;
+}

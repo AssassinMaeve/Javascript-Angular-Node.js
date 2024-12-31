@@ -1,0 +1,37 @@
+h1 {
+    position: relative;
+    font-family: 'Exo';
+    font-size: 2em;
+    margin: 0;
+    transform: skew(-15deg);
+    letter-spacing: 0.03em; 
+  }
+
+fieldset{
+    margin:2%;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding:1%;
+    border-radius: 10px;
+}
+
+#ifbutton{
+    margin: 2%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#ifmessage{
+    margin: 2%;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Exo';
+    transform: skew(-15deg);
+    letter-spacing: 0.03em; 
+}

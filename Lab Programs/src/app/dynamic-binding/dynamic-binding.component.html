@@ -1,0 +1,25 @@
+
+<!-- Display the title with blue color and center alignment -->
+<h1 align="center" id="title">{{title}}</h1>
+
+<!-- Fieldset to group related elements -->
+<Fieldset>
+
+  <!-- Center align the content inside the div -->
+  <div style="text-align:center">
+
+    <!-- Heading for the dynamic binding example -->
+    <h1>Dynamic Binding Example</h1>
+
+    <!-- Input field bound to the inputValue property using ngModel for two-way data binding -->
+    <input id="box" type="text" [(ngModel)]="inputValue" placeholder="Type something...">
+
+    <!-- Display the value entered in the input field -->
+    <h1 id="input">You entered: {{ inputValue }}</h1>
+
+  </div>
+</Fieldset>
+
+
+
+
