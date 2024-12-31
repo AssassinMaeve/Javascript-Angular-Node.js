@@ -11,6 +11,7 @@ import { DaySwitchComponent } from './day-switch/day-switch.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { DateDisplayComponent } from './date-display/date-display.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DateDisplayComponent } from './date-display/date-display.component';
     AppRoutingModule,
     FormsModule,
     TodoListComponent,
-    StudentDetailsComponent
+    StudentDetailsComponent,
+    BrowserAnimationsModule
 ],
   providers: [
     provideClientHydration(withEventReplay())
