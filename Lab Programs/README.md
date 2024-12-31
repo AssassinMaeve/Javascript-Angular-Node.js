@@ -2,7 +2,6 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
 
-<<<<<<< HEAD
 ## Development server
 Getting Started with the Angular Project
 
@@ -20,7 +19,7 @@ First, you need to copy the repository to your local machine. Open your terminal
 ```console
 git clone https://github.com/your-username/your-repo-name.git
 ```
-Replace > your-username and > your-repo-name with the correct values.
+Replace  *your-username* and  *your-repo-name with* the correct values.
 
 **Installing Dependencies**
 Go to the project directory and install the necessary packages:
@@ -45,9 +44,9 @@ To prepare the project for production, run:
 npm run build
 ```
 
-This will create the build files in the > dist/ directory.
+This will create the build files in the  *dist/* directory.
 
-Running Unit Tests
+**Running Unit Tests**
 To run the unit tests, use this command:
 
 ```console
