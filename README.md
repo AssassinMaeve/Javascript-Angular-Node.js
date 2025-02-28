@@ -1,7 +1,3 @@
-Here's the updated **README** to reflect the new **Angular lab project structure**:  
-
----
-
 # **JavaScript, Angular, and Node.js Lab Programs & Notes**  
 
 ## 📌 **Overview**  
